@@ -1,0 +1,51 @@
+.intrinsic {
+  position: relative;
+}
+
+.intrinsic:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 100%;
+  padding-bottom: calc(9 / 16 * 100%);
+}
+
+.intrinsic > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.dn--spotlight {}
+
+.dn--spotlight__image {
+  height: 180px;
+  margin: 0 0 1rem;
+}
+
+.dn--spotlight__image img {
+  max-width: 100%;
+}
+
+.dn--spotlight__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 1rem;
+}
+
+.dn--spotlight__text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+.dn--spotlight__links {
+  list-style: none;
+}

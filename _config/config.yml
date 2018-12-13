@@ -1,0 +1,6 @@
+---
+name: elemental-carbon-spotlight-list
+---
+DNADesign\Elemental\Models\ElementSpotlightList:
+  allowed_elements:
+    - DNADesign\Elemental\Models\ElementSpotlight

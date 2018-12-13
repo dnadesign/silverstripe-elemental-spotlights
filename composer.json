@@ -1,0 +1,25 @@
+{
+    "name": "dnadesign/silverstripe-elemental-carbon-spotlight",
+    "description": "Spotlight is a basic combination of images, titles, text, buttons and links to create flexible and versatile content blocks",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "elemental",
+        "accordion",
+        "carbon design system"
+    ],
+    "require": {
+        "dnadesign/silverstripe-elemental": "^3",
+        "dnadesign/silverstripe-lazyloaded-image": "^0.1.0",
+        "gorriecoe/silverstripe-link": "^1.2.4",
+        "silverstripe/vendor-plugin": "^1.0"
+    },
+    "extra": {
+        "installer-name": "silverstripe-elemental-carbon-spotlight",
+        "expose": [
+            "client"
+        ]
+    },
+    "license": "BSD-3-Clause",
+    "minimum-stability": "dev"
+}
