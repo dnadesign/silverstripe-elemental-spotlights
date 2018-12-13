@@ -24,7 +24,7 @@
   <% if $Links %>
     <ul class="dn--spotlight__links">
       <% loop $Links %>
-        <li>{$renderWith('DNADesign\Elemental\Models\Link')}</li>
+        <li>{$renderWith('DNADesign\Elemental\Models\SpotlightLink')}</li>
       <% end_loop %>
     </ul>
   <% end_if %>
