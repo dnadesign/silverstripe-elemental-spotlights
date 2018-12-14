@@ -21,31 +21,35 @@
   object-position: center center;
 }
 
-.dn--spotlight {}
+.element-spotlight {}
 
-.dn--spotlight__image {
+.element-spotlight__content {
+  height: 100%;
+}
+
+.element-spotlight__image {
   height: 180px;
   margin: 0 0 1rem;
 }
 
-.dn--spotlight__image img {
+.element-spotlight__image img {
   max-width: 100%;
 }
 
-.dn--spotlight__title {
+.element-spotlight__title {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.25;
   margin: 0 0 1rem;
 }
 
-.dn--spotlight__text {
+.element-spotlight__text {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   margin: 0 0 1rem;
 }
 
-.dn--spotlight__links {
+.element-spotlight__links {
   list-style: none;
 }
