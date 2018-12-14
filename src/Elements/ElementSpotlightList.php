@@ -27,4 +27,9 @@ class ElementSpotlightList extends ElementList
   {
     return _t(__class__ . '.BlockType', 'Spotlight List');
   }
+
+  public function getSimpleClassName()
+  {
+    return 'element-spotlight-list';
+  }
 }
