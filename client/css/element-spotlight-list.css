@@ -1,28 +1,30 @@
-.dn--spotlight-list {
+.element-spotlight-list {
   padding: 4rem 0 2rem;
 }
 
-.dn--spotlight-list__header {
+.element-spotlight-list.dark {}
+
+.element-spotlight-list__header {
   text-align: center;
 }
 
-.dn--spotlight-list__title {
+.element-spotlight-list__title {
   font-size: 2.25rem;
   line-height: 1.25;
   margin: 0 0 2rem;
 }
 
-.dn--spotlight-list__intro {
+.element-spotlight-list__intro {
   display: flex;
   justify-content: center;
   margin: 0 0 2rem;
 }
 
-.dn--spotlight-list__intro p {
+.element-spotlight-list__intro p {
   font-size: 1.75rem;
   line-height: 1.25;
 }
 
-.dn--spotlight-list__container {
+.element-spotlight-list__container {
   justify-content: center;
 }

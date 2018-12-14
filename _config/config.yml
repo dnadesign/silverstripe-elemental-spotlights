@@ -2,5 +2,7 @@
 name: elemental-carbon-spotlight-list
 ---
 DNADesign\Elemental\Models\ElementSpotlightList:
+  styles:
+    dark: 'Dark Background'
   allowed_elements:
     - DNADesign\Elemental\Models\ElementSpotlight

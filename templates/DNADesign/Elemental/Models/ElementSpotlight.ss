@@ -4,25 +4,25 @@
 }
 </style>
 
-<div class="dn--spotlight">
+<div class="element-spotlight__content">
   <% if $Image %>
-    <div class="intrinsic dn--spotlight__image">
+    <div class="intrinsic element-spotlight__image">
       {$Image.Lazyloaded}
     </div>
   <% end_if %>
 
   <% if $ShowTitle %>
-    <h3 class="dn--spotlight__title">{$Title}</h3>
+    <h3 class="element-spotlight__title">{$Title}</h3>
   <% end_if %>
 
   <% if $Text %>
-    <div class="dn--spotlight__text">
+    <div class="element-spotlight__text">
       {$Text}
     </div>
   <% end_if %>
 
   <% if $Links %>
-    <ul class="dn--spotlight__links">
+    <ul class="element-spotlight__links">
       <% loop $Links %>
         <li>{$renderWith('DNADesign\Elemental\Models\SpotlightLink')}</li>
       <% end_loop %>

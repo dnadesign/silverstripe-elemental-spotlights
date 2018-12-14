@@ -46,4 +46,9 @@ class ElementSpotlight extends BaseElement
     return _t(__class__ . '.BlockType', 'Spotlight');
   }
 
+  public function getSimpleClassName()
+  {
+    return 'element-spotlight';
+  }
+
 }
