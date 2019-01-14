@@ -5,6 +5,8 @@
 
 .element-spotlight-list__container {
   padding: 4rem 0 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .element-spotlight-list__header {
