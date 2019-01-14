@@ -1,8 +1,11 @@
 .element-spotlight-list {
-  padding: 4rem 0 2rem;
 }
 
 .element-spotlight-list.dark {}
+
+.element-spotlight-list__container {
+  padding: 4rem 0 2rem;
+}
 
 .element-spotlight-list__header {
   text-align: center;
@@ -15,8 +18,12 @@
 }
 
 .element-spotlight-list__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 0 2rem;
 }
 
@@ -25,6 +32,20 @@
   line-height: 1.25;
 }
 
-.element-spotlight-list__container {
-  justify-content: center;
+.element-spotlight-list__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -5px;
+}
+
+@media (min-width: 576px) {
+  .element-spotlight-list__list {
+    margin: 0 -10px;
+  }
 }
