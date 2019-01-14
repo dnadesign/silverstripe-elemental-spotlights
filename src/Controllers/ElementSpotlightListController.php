@@ -10,7 +10,7 @@ class ElementSpotlightListController extends ElementController
   {
     parent::init();
 
-    Requirements::css('dnadesign/silverstripe-elemental-carbon-spotlight: client/css/element-spotlight-list.css');
-    Requirements::css('dnadesign/silverstripe-elemental-carbon-spotlight: client/css/element-spotlight.css');
+    Requirements::css('dnadesign/silverstripe-elemental-spotlights: client/css/element-spotlight-list.css');
+    Requirements::css('dnadesign/silverstripe-elemental-spotlights: client/css/element-spotlight.css');
   }
 }
