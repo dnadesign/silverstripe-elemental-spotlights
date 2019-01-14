@@ -2,20 +2,21 @@
 
 namespace DNADesign\Elemental\Models;
 
-use DNADesign\ElementalList\Model\ElementList;
+use DNADesign\Elemental\Models\BaseElement;
+use DNADesign\Elemental\DataObjects\Spotlight;
 use DNADesign\Elemental\Controllers\ElementSpotlightListController;
 
-class ElementSpotlightList extends ElementList
+class ElementSpotlightList extends BaseElement
 {
-  private static $table_name = 'ElementCarbonSpotlightList';
+  private static $table_name = 'DNADesign_ElementCarbonSpotlightList';
 
-  private static $description = 'Collection of Spotlight modules';
+  private static $description = 'Spotlight is a basic combination of images, titles, text, buttons and links to create flexible and versatile content blocks';
 
   private static $singular_name = 'spotlight list';
 
   private static $plural_name = 'spotlight lists';
 
-  private static $icon = 'font-icon-block-list';
+  private static $icon = 'font-icon-block-layout';
 
   private static $controller_class = ElementSpotlightListController::class;
 
@@ -23,9 +24,13 @@ class ElementSpotlightList extends ElementList
     'Intro' => 'Text',
   ];
 
+  private static $has_many = [
+    'Spotlights' => Spotlight::class,
+  ];
+
   public function getType()
   {
-    return _t(__class__ . '.BlockType', 'Spotlight List');
+    return _t(__class__ . '.BlockType', 'Spotlights');
   }
 
   public function getSimpleClassName()
