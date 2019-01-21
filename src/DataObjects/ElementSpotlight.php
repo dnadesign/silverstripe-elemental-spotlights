@@ -30,6 +30,10 @@ class Spotlight extends DataObject
     'Image' => Image::class,
     'Link' => Link::class
   ];
+  
+  private static $owns = [
+    'Image',
+  ];
 
   public function getCMSFields()
   {
