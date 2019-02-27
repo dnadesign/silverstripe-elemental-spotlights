@@ -1,52 +1,6 @@
 .element-spotlight-list {}
 .element-spotlight-list.dark {}
-
-.element-spotlight-list__container {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.element-spotlight-list__header {
-  text-align: center;
-}
-
-.element-spotlight-list__title {
-  font-size: 2.25rem;
-  line-height: 1.25;
-  margin: 0 0 2rem;
-}
-
-.element-spotlight-list__intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 0 2rem;
-}
-
-.element-spotlight-list__intro p {
-  font-size: 1.75rem;
-  line-height: 1.25;
-}
-
-.element-spotlight-list__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 -5px;
-}
-
-@media (min-width: 576px) {
-  .element-spotlight-list__list {
-    margin: 0 -10px;
-  }
-}
+.element-spotlight-list__container {}
+.element-spotlight-list__header {}
+.element-spotlight-list__title {}
+.element-spotlight-list__intro {}
