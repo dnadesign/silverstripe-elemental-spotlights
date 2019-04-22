@@ -5,17 +5,11 @@
 
 .element-spotlight__image {
   position: relative;
-}
-
-.element-spotlight__image:after {
-  content: '';
-  display: block;
   height: 0;
-  width: 100%;
   padding-bottom: calc(9 / 16 * 100%);
 }
 
-.element-spotlight__image > img {
+.element-spotlight__image img {
   position: absolute;
   top: 0;
   left: 0;
