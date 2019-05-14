@@ -4,7 +4,6 @@ namespace DNADesign\Elemental\Models;
 
 use DNADesign\Elemental\Models\BaseElement;
 use DNADesign\Elemental\DataObjects\Spotlight;
-use DNADesign\Elemental\Controllers\ElementSpotlightListController;
 
 class ElementSpotlightList extends BaseElement
 {
@@ -17,8 +16,6 @@ class ElementSpotlightList extends BaseElement
   private static $plural_name = 'spotlight lists';
 
   private static $icon = 'font-icon-block-layout';
-
-  private static $controller_class = ElementSpotlightListController::class;
 
   private static $db = [
     'Intro' => 'Text',

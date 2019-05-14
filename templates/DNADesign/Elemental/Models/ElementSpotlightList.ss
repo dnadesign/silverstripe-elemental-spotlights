@@ -1,3 +1,4 @@
+DEBUG
 <% if $Spotlights.Count > 0 %>
   <div class="element-spotlight-list__container">
     <% if $Title && $ShowTitle || $Intro %>
@@ -19,4 +20,7 @@
       <% end_loop %>
     </div>
   </div>
+
+  <% require css("dnadesign/silverstripe-elemental-spotlights: client/css/element-spotlight-list.css") %>
+  <% require css("dnadesign/silverstripe-elemental-spotlights: client/css/element-spotlight.css") %>
 <% end_if %>
