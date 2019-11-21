@@ -30,7 +30,7 @@ class Spotlight extends DataObject
     'Image' => Image::class,
     'Link' => Link::class
   ];
-  
+
   private static $owns = [
     'Image',
   ];
@@ -49,11 +49,8 @@ class Spotlight extends DataObject
 
     $fields->replaceField(
       'Title',
-      TextCheckboxGroupField::create(
-        TextField::create('Title', 'Title (displayed if checked)'),
-        CheckboxField::create('ShowTitle', 'Displayed')
-      )
-      ->setName('TitleAndDisplayed')
+      TextCheckboxGroupField::create()
+        ->setName('TitleAndDisplayed')
     );
 
     return $fields;
