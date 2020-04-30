@@ -34,4 +34,9 @@ class ElementSpotlightList extends BaseElement
   {
     return 'element-spotlight-list';
   }
+
+  public function inlineEditable()
+  {
+    return false;
+  }
 }
