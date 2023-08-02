@@ -6,8 +6,7 @@ use DNADesign\Elemental\Models\ElementSpotlightList;
 use DNADesign\Elemental\Forms\TextCheckboxGroupField;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Assets\Image;
-use SilverStripe\Forms\CheckboxField;
-use SilverStripe\Forms\TextField;
+use SilverStripe\Forms\LiteralField;
 use SilverShop\HasOneField\HasOneButtonField;
 use gorriecoe\Link\Models\Link;
 
@@ -43,9 +42,15 @@ class Spotlight extends DataObject
     $fields->removeByName('LinkID');
     $fields->removeByName('ListID');
 
-    $fields->addFieldsToTab('Root.Main', [
-      HasOneButtonField::create($this, 'Link'),
-    ]);
+    if ($this->isInDB()) {
+      $fields->addFieldsToTab('Root.Main', [
+        HasOneButtonField::create($this, 'Link'),
+      ]);
+    } else {
+      $fields->addFieldsToTab('Root.Main', [
+        LiteralField::create('SaveFirst', '<p class="message warning">Save the spotlight before adding a link</p>'),
+      ]);
+    }
 
     $fields->replaceField(
       'Title',
