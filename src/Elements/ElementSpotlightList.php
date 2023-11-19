@@ -25,6 +25,10 @@ class ElementSpotlightList extends BaseElement
     'Spotlights' => Spotlight::class,
   ];
 
+  private static $owns = [
+    'Spotlights'
+  ];
+
   public function getType()
   {
     return _t(__class__ . '.BlockType', 'Spotlights');
