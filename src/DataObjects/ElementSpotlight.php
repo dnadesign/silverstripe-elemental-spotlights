@@ -5,10 +5,10 @@ namespace DNADesign\Elemental\DataObjects;
 use DNADesign\Elemental\Models\ElementSpotlightList;
 use DNADesign\Elemental\Forms\TextCheckboxGroupField;
 use SilverStripe\ORM\DataObject;
-use SilverStripe\Assets\Image;
 use SilverStripe\Forms\LiteralField;
-use SilverShop\HasOneField\HasOneButtonField;
-use gorriecoe\Link\Models\Link;
+use SilverStripe\Assets\Image;
+use SilverStripe\LinkField\Form\LinkField;
+use SilverStripe\LinkField\Models\Link;
 
 class Spotlight extends DataObject
 {
@@ -31,7 +31,16 @@ class Spotlight extends DataObject
   ];
 
   private static $owns = [
+    'Link',
     'Image',
+  ];
+
+  private static array $cascade_deletes = [
+    'Link',
+  ];
+
+  private static array $cascade_duplicates = [
+    'Link',
   ];
 
   public function getCMSFields()
@@ -39,18 +48,11 @@ class Spotlight extends DataObject
     $fields = parent::getCMSFields();
 
     $fields->removeByName('ShowTitle');
-    $fields->removeByName('LinkID');
     $fields->removeByName('ListID');
 
-    if ($this->isInDB()) {
-      $fields->addFieldsToTab('Root.Main', [
-        HasOneButtonField::create($this, 'Link'),
-      ]);
-    } else {
-      $fields->addFieldsToTab('Root.Main', [
-        LiteralField::create('SaveFirst', '<p class="message warning">Save the spotlight before adding a link</p>'),
-      ]);
-    }
+    $fields->addFieldsToTab('Root.Main', [
+      LinkField::create('Link'),
+    ]);
 
     $fields->replaceField(
       'Title',
