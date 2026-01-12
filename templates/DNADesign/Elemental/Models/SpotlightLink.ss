@@ -1,5 +1,5 @@
-<% if LinkURL %>
-  <a{$IDAttr}{$ClassAttr} href="{$LinkURL}"{$TargetAttr}>
+<% if $URL %>
+  <a{$IDAttr}{$ClassAttr} href="{$URL}"{$TargetAttr}>
     {$Title}
   </a>
 <% end_if %>

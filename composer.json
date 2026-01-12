@@ -7,11 +7,11 @@
         "elemental"
     ],
     "require": {
-        "dnadesign/silverstripe-elemental": "^5",
-        "dnadesign/silverstripe-lazyloaded-image": "^1",
-        "gorriecoe/silverstripe-link": "^1",
-        "silvershop/silverstripe-hasonefield": "^4",
-        "silverstripe/vendor-plugin": "^2.0"
+        "silverstripe/cms": "^6",
+        "dnadesign/silverstripe-elemental": "^6",
+        "dnadesign/silverstripe-lazyloaded-image": "^2",
+        "silverstripe/linkfield": "^5",
+        "silvershop/silverstripe-hasonefield": "dev-main"
     },
     "extra": {
         "expose": [
